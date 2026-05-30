@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Test-Path *)",
+      "PowerShell(cd C:\\\\Users\\\\emine\\\\vicunaya; Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"cd 'C:\\\\Users\\\\emine\\\\vicunaya'; npm run dev:delivery\" -WindowStyle Normal; Start-Sleep -Seconds 2; Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"cd 'C:\\\\Users\\\\emine\\\\vicunaya'; npm run dev:remises\" -WindowStyle Normal; Write-Host \"Apps iniciando en ventanas separadas...\")",
+      "PowerShell(Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"cd 'C:\\\\Users\\\\emine\\\\vicunaya'; npm run dev:delivery\" -WindowStyle Normal; Write-Host \"App unificada iniciando en http://localhost:3000\")",
+      "PowerShell(Get-Process *)",
+      "PowerShell(Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"cd 'C:\\\\Users\\\\emine\\\\vicunaya'; npm run dev:delivery\" -WindowStyle Normal; Write-Host \"Iniciando en http://localhost:3000\")",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\emine\\\\vicunaya\\\\supabase\\\\setup_completo.sql\"\\).Count; Write-Host \"lineas totales\")",
+      "PowerShell(Get-Command *)",
+      "PowerShell(npx --yes localtunnel --port 3001 2>&1)",
+      "PowerShell(npm install *)",
+      "PowerShell(vercel *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(cd C:\\\\Users\\\\emine\\\\vicunaya; $env:VERCEL_TOKEN = \"vca_8NQ0zMgr1Hd9VFWjrNxfP6c4ac3M3q5mc6y5bsTjMXRKJ8nYp72UGLFs\"; vercel --prod --yes --token $env:VERCEL_TOKEN --env VITE_SUPABASE_URL=\"https://hvmdumuedqfoifgayleh.supabase.co\" --env VITE_SUPABASE_ANON_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2bWR1bXVlZHFmb2lmZ2F5bGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2MDIzNjMsImV4cCI6MjA5NDE3ODM2M30.A0mcRHe8rhad5AipCfj-lO6wPbJLE6aoMvXaIYFQnUI\" 2>&1)"
+    ]
+  }
+}

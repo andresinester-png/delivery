@@ -1,0 +1,21 @@
+{
+  "name": "vicunaya",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:delivery": "turbo run dev --filter=delivery",
+    "dev:remises": "turbo run dev --filter=remises",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "npm@10.0.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
