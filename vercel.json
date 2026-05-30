@@ -1,5 +1,6 @@
 {
   "buildCommand": "cd packages/delivery && npm run build",
   "outputDirectory": "packages/delivery/dist",
-  "installCommand": "cd packages/delivery && npm install"
+  "installCommand": "npm install",
+  "framework": null
 }
